@@ -4,12 +4,14 @@ From LeetCode
 https://leetcode.com/problems/merge-sorted-array
 Date: 2023-07-20
 
-You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, 
+and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
 Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
 The final sorted array should not be returned by the function, but instead be stored inside the array nums1. 
-To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.
+To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, 
+and the last n elements are set to 0 and should be ignored.
 nums2 has a length of n.
 
 Example 1:
@@ -26,18 +28,11 @@ Constraints:
     0 <= m, n <= 200
     1 <= m + n <= 200
     -109 <= nums1[i], nums2[j] <= 109
+*/
 
 // Attempt Number: Several Attempts made to find the solution
 // Logic: Comparing the last index of nums1 and nums2 and assigning a larger element of either nums1 or nums2 at the last index for combined elements.
 // Time Complexity: O(m + n)
-
-/**
- * @param {number[]} nums1
- * @param {number} m
- * @param {number[]} nums2
- * @param {number} n
- * @return {void} Do not return anything, modify nums1 in-place instead.
-*/
 
 var merge = function(nums1, m, nums2, n) {
   let i = m - 1; // i is nums1's last index

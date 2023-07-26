@@ -4,13 +4,15 @@ From LeetCode
 https://leetcode.com/problems/remove-element/
 Date: 2023-07-22
 
-Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
+The order of the elements may be changed. 
+Then return the number of elements in nums which are not equal to val.
 
-Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+Consider the number of elements in nums which are not equal to val be k, to get accepted, 
+you need to do the following things:
 
-Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
-Return k.
-
+- Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+- Return k.
 
 Example 1:
 
@@ -25,20 +27,14 @@ Constraints:
     0 <= nums.length <= 100
     0 <= nums[i] <= 50
     0 <= val <= 100
-
+*/
 
 // Attempt Number: 1
 // Logic: 
 // Counting up k and mark element not equal to "val" as false in the first for loop and swap 
 // Swapping elemented makred false with non-marked element in the second for loop
 // Time Complexity: O(n) + O(n) = O(n)
-*/
 
-/**
- * @param {number[]} nums
- * @param {number} val
- * @return {number}
- */
 var removeElement = function(nums, val) {
     //1st loop time complexity: O(n)
     let k = 0;
