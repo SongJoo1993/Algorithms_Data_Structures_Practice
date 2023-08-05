@@ -5,6 +5,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 
 - [Array](#array)
 - [Two Pointers](#two-pointers)
+- [Hashmap](#hashmap)
 
 ### Array
 
@@ -26,3 +27,9 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 | :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
 |  Leet125  | Valid Palindrome                  | [JavaScript](Two-Pointers/Leet125_ValidPalindrome.js)                      | O(n)        | 61 ms (92.73%)   | 44.18 mb (88.02%)    | Given a string s, return true if it is a palindrome, or false otherwise.   |  Easy |
 |  Leet392  | Is Subsequence                    | [JavaScript](Two-Pointers/Leet392._IsSubsequence.js)                       | O(n)        | 51 ms (91.11%)   | 42.60 mb (17.90%)    | Given two strings s and t, return true if s is a subsequence of t, or false otherwise.   |  Easy |
+
+### Hashmap
+
+|    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
+| :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
+|  Leet383  | Ransom Note                  | [JavaScript](Hashmap/Leet383_RansomNote.js)                      | O(n)        | 81 ms (75.11%)   | 43.08 mb (97.50%)    | Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.   |  Easy |
