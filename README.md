@@ -39,3 +39,9 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet1  | Two Sum                  | [JavaScript](Hashmap/Leet1_TwoSum.js)                      | O(n)        | 56 ms (90.81%)   | 43.5 mb (20.94%)    | Given an array and an integer target, return indices of the two numbers in an array such that they add up to target.   |  Easy |
 |  Leet202  | Happy Number                  | [JavaScript](Hashmap/Leet202_HappyNumber.js)                      | O(n)        | 60 ms (71.19%)   | 44.4 mb (28.18%)    | Check for happy number without cycle.   |  Easy |
 |  Leet219  | Contains Duplicate II                  | [JavaScript](Hashmap/Leet219_ContainsDuplicateII.js)                      | O(n)        | 77 ms (96.24%)   | 67 mb (21.28%)    | Find duplicate value in the array using Hashmap.   |  Easy |
+
+### Intervals
+
+|    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
+| :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
+|  Leet228  | Summary Ranges                  | [JavaScript](Intervals/Leet228_SummaryRanges.js)                      | O(n)        | 43 ms (96.35%)   | 41.66 mb (86.02%)    | Given a sorted unique integer array nums, return the smallest sorted list of ranges.   |  Easy |
