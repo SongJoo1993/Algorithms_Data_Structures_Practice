@@ -6,6 +6,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 - [Array](#array)
 - [Two Pointers](#two-pointers)
 - [Hashmap](#hashmap)
+- [Intervals](#intervals)
 
 ### Array
 
@@ -45,3 +46,4 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
 | :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
 |  Leet228  | Summary Ranges                  | [JavaScript](Intervals/Leet228_SummaryRanges.js)                      | O(n)        | 43 ms (96.35%)   | 41.66 mb (86.02%)    | Given a sorted unique integer array nums, return the smallest sorted list of ranges.   |  Easy |
+|  Leet56  | Merge Intervals                  | [JavaScript](Intervals/Leet56_MergeIntervals.js)                      | O(n)        | 93 ms (82.48%)   | 47.95 mb (97.81%)    | Given an array of intervals, merge all overlapping intervals, and return an array of the non-overlapping intervals.   |  Medium |
