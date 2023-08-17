@@ -7,6 +7,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 - [Two Pointers](#two-pointers)
 - [Hashmap](#hashmap)
 - [Intervals](#intervals)
+- [Stack](#stack)
 
 ### Array
 
@@ -47,3 +48,11 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 | :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
 |  Leet228  | Summary Ranges                  | [JavaScript](Intervals/Leet228_SummaryRanges.js)                      | O(n)        | 43 ms (96.35%)   | 41.66 mb (86.02%)    | Given a sorted unique integer array nums, return the smallest sorted list of ranges.   |  Easy |
 |  Leet56  | Merge Intervals                  | [JavaScript](Intervals/Leet56_MergeIntervals.js)                      | O(n)        | 93 ms (82.48%)   | 47.95 mb (97.81%)    | Given an array of intervals, merge all overlapping intervals, and return an array of the non-overlapping intervals.   |  Medium |
+
+
+### Stack
+
+|    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
+| :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
+|  Leet20  | Valid Parentheses                  | [JavaScript](Stack/Leet20_ValidParentheses.js)                      | O(n)        | 45 ms (98.15%)   | 41.76 mb (92.43%)    | Given a string input, determine if the input string is valid.   |  Easy |
+|  Leet71  | Simplify Path                  | [JavaScript](Stack/Leet71_SimplifyPath.js)                      | O(n)        | 53 ms (91.15%)   | 43.6 mb (94.35%)    | Given a string input, convert it to the simplified canonical path.   |  Medium |
