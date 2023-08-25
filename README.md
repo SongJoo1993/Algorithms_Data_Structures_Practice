@@ -24,6 +24,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet58  | Length of Last Word                 | [JavaScript](Array/Leet58._LengthofLastWord.js)                      | O(n)            |  37 ms (99.84%)  | 41.9 mb (63.49%)    | Given a string s consisting of words and spaces, return the length of the last word in the string.                 | Easy   |
 |  Leet14  | Longest Common Prefix               | [JavaScript](Array/Leet14._LongestCommonPrefix.js)                   | O(n2)           |  51 ms (94.5%)   | 43.7 mb (20.78%)    | Write a function to find the longest common prefix string amongst an array of strings.                 |  Easy   |
 |  Leet28  | Find the Index of the First Occurrence in a String | [JavaScript](Array/Leet28_FindFistIndexOccurrenceInString.js)                   | O(n2)           |  46 ms (96.72%)   | 41.1 mb (98.78%)    | Write a function to find if the argument exits in the first argument and return the index where it is found.                 |  Easy   |
+|  Leet80  | Remove Duplicates from Sorted Array II | [JavaScript](Array/Leet80_RemoveDuplicatesfromSortedArrayII.js)                   | O(n)           |  58 ms (82.70%)   | 44.1 mb (45.83%)    | Given an integer array nums sorted in non-decreasing order, remove some duplicates in-place such that each unique element appears at most twice.                 |  Easy   |
 
 
 ### Two Pointers
