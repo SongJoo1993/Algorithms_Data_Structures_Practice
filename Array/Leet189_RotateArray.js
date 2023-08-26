@@ -22,21 +22,41 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: Using sentinel node, sum the value of l1 and l2 and pass overTen value to the sum of next l1 and l2 value.
+// Logic: 
+// Using two pointers, reverse the input array 3 times: 
+// first full reverse, second first k numbers of element, third reverse the rest 
 // Time Complexity: O(n)
 
-
 var rotate = function(nums, k) {
-    let temp;
-    for(let i = 0; i < nums.length; i ++) {
-        temp = nums[i];
-    }
+    k = k % nums.length; 
+    let l = 0;
+    let r = nums.length - 1;
+    nums = reverse(nums,l,r);
+    
+    l = 0
+    r = k -1;
+    nums = reverse(nums,l,r);
+    
+    l = k
+    r = nums.length -1;
+    nums = reverse(nums,l,r);
 };
-// nums = [1,2,3,4,5,6,7], k = 3
-// nums[0] -> nums[3]
-// nums[1] -> nums[4]
-// nums[2] -> nums[5]
-// nums[3] -> nums[6]
-// nums[4] -> nums[7 - length(7) = 0]
-// nums[5] -> nums[8- length(7) = 1]
-// nums[6] -> nums[9- length(7) = 2]
+
+function reverse(arr, l, r) {
+    while(l < r) {
+        let temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+        l++;
+        r--;
+    }
+    return arr;
+}
+
+// Attempt Number: 2
+// Logic: First splice last k elements and push them to the front of the array by unshift method
+// Time Complexity: O(n)
+var rotate = function(nums, k) {
+    k = k % nums.length;
+    nums.unshift(...nums.splice(nums.length - k))  
+};
