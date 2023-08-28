@@ -26,6 +26,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet28  | Find the Index of the First Occurrence in a String | [JavaScript](Array/Leet28_FindFistIndexOccurrenceInString.js)                   | O(n2)           |  46 ms (96.72%)   | 41.1 mb (98.78%)    | Write a function to find if the argument exits in the first argument and return the index where it is found.                 |  Easy   |
 |  Leet80  | Remove Duplicates from Sorted Array II | [JavaScript](Array/Leet80_RemoveDuplicatesfromSortedArrayII.js)                   | O(n)           |  58 ms (82.70%)   | 44.1 mb (45.83%)    | Given an integer array nums sorted in non-decreasing order, remove some duplicates in-place such that each unique element appears at most twice.                 |  Easy   |
 |  Leet189  | Rotate Array | [JavaScript](Array/Leet189_RotateArray.js)                   | O(n)           |  72 ms (94.57%)   | 51.4 mb (70.57%)    | Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.                 |  Easy   |
+|  Leet122  | Best Time to Buy and Sell Stock II | [JavaScript](Array/Leet122_BestTimetoBuyandSellStockII.js)                   | O(n)           |  72 ms (94.57%)   | 51.4 mb (70.57%)    | Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.                 |  Easy   |
 
 
 ### Two Pointers
