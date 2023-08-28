@@ -33,33 +33,15 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: 
+// Logic: Using greedy algorithm, only consider the value of current and next element's value and add their margin if next is bigger than current.
 // Time Complexity: O(n)
 
 var maxProfit = function(prices) {
     let accum = 0;
-    let min = prices[0]; 
-    let max = 0;
-    //starting from 0 index, if facing lower value it become min
     for(let i = 1; i < prices.length; i++) {
-        if(!max && prices[i] < min) {
-            min = prices[i]
-        }
-        else {
-            if(prices[i] > max) {
-                max = prices[i];
-            }
-            else{
-                accum += (max - min);
-                min = prices[i];
-                max = 0;
-            }
+        if(prices[i] > prices[i-1]) {
+            accum += (prices[i] - prices[i-1]);
         }
     }
-
-    if(min && max > 0) {
-        accum += (max - min);
-    }
-
     return accum;
 };

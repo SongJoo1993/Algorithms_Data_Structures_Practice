@@ -1,0 +1,9 @@
+Greedy Algorithm
+- An algorithm to find the best option available among local options.
+- Works in a top-down approach
+- This algorithm may not produce the best solutions for all problems.
+- When to use this algorithm:
+    - Greedy Choice Property
+        * Only if an optimal solution can be found at each step without recosidering the previous steps.
+    - Optimal Substructure
+        * If the optimal overall solution is equal/corresponds to the optimal solution to its subproblems.
