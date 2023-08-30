@@ -2,7 +2,7 @@
 From LeetCode
 55. Jump Game
 https://leetcode.com/problems/jump-game
-Date: 2023-08-28
+Date: 2023-08-30
 
 You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.
 
@@ -26,32 +26,14 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: 
+// Logic: Iterates while updating max. If max is lower than current index, return false or true.
 // Time Complexity: O(n)
 
 var canJump = function(nums) {
-    let i = 0;
-    while(i < nums.length -1) {
-      console.log("first",i)
-      if (nums[i] == 0) return false;
-
-      if(nums[i+1] > nums[i]) {
-        i ++;
-      }
-      else {
-        i += nums[i];
-      }
-      console.log("last",i)
-    }
-    return i + 1 >= nums.length;
+  let max = 0;
+  for(let i = 0; i < nums.length; i++) {
+      if(i > max) return false;
+      max = Math.max(nums[i]+i, max);
+  }
+  return true;
 };
-//         0 1 2 3 4
-// nums = [2,3,1,1,4]
-// 1st: 2(0) -> 1(2) -> 1(3) -> 4(4)
-// 2nd: 2 -> 3 -> 4
-
-// nums = [3,2,1,0,4]
-// 1st: 3 -> 0 -> Fail
-
-// if next is bigger than cur, move to the next
-// if not, move to the index as much value as the current
