@@ -28,7 +28,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet189  | Rotate Array | [JavaScript](Array/Leet189_RotateArray.js)                   | O(n)           |  72 ms (94.57%)   | 51.4 mb (70.57%)    | Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.                 |  Medium   |
 |  Leet122  | Best Time to Buy and Sell Stock II | [JavaScript](Array/Leet122_BestTimetoBuyandSellStockII.js)                   | O(n)           |  47 ms (94.73%)   | 41.9 mb (82.42%)    | Given an integer array nums, Find and return the maximum profit you can achieve.                 |  Medium   |
 |  Leet55  | JumpGame | [JavaScript](Array/Leet55_JumpGame.js)                   | O(n)           |  55 ms (94.15%)   | 45.16 mb (99.83%)    | Given an integer array nums, return true if you can reach the last index, or false otherwise.                 |  Medium   |
-|  Leet45  | Jump Game II | [JavaScript](Array/Leet45_JumpGameII.js)                   | O(n)           |  55 ms (94.15%)   | 45.16 mb (99.83%)    | Given an integer array nums, return true if you can reach the last index, or false otherwise.                 |  Medium   |
+|  Leet45  | Jump Game II | [JavaScript](Array/Leet45_JumpGameII.js)                   | O(n)           |  56 ms (78.66%)   | 43.9 mb (59.29%)    | Given an integer array nums, return the minimum number of jumps to reach nums[n - 1].                 |  Medium   |
 
 
 ### Two Pointers
