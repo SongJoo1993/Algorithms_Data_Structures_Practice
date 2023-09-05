@@ -29,6 +29,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet122  | Best Time to Buy and Sell Stock II | [JavaScript](Array/Leet122_BestTimetoBuyandSellStockII.js)                   | O(n)           |  47 ms (94.73%)   | 41.9 mb (82.42%)    | Given an integer array nums, Find and return the maximum profit you can achieve.                 |  Medium   |
 |  Leet55  | JumpGame | [JavaScript](Array/Leet55_JumpGame.js)                   | O(n)           |  55 ms (94.15%)   | 45.16 mb (99.83%)    | Given an integer array nums, return true if you can reach the last index, or false otherwise.                 |  Medium   |
 |  Leet45  | Jump Game II | [JavaScript](Array/Leet45_JumpGameII.js)                   | O(n)           |  56 ms (78.66%)   | 43.9 mb (59.29%)    | Given an integer array nums, return the minimum number of jumps to reach nums[n - 1].                 |  Medium   |
+|  Leet274  | H-Index | [JavaScript](Array/Leet274_H-Index.js)                   | O(n)           |  54 ms (64.05%)   | 41.2 mb (99.20%)    | Given an integer array nums, return the researcher's h-index.                 |  Medium   |
 
 
 ### Two Pointers

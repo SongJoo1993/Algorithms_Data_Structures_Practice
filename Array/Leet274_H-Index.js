@@ -2,7 +2,7 @@
 From LeetCode
 274. H-Index
 https://leetcode.com/problems/h-index
-Date: 2023-09-04
+Date: 2023-09-05
 
 Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return the researcher's h-index.
 
@@ -22,20 +22,14 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic:
+// Logic: First sort the citations in descending order and count up h-index variable 'h' if current citation is greater than or equal to the value of h.
 // Time Complexity: O(n)
 
 var hIndex = function(citations) {
-    const sorted = arrs.sort((a, b) => b - a);
-    let sum = sorted.reduce(function(a, b){ return a + b });
-    
-    return Math.floor(sum/citations.length);
+    const sorted = citations.sort((a, b) => b - a);
+    let h = 0;
+    while (h < sorted.length && sorted[h] >= h+1) {
+        h += 1
+    }
+    return h;
 };
-// the total number of publications and the total number of citations to those works
-// let c =[3,0,6,1,5] -> [6,5,3,1,0]
-// number of publications = 5, the total number of citations = 15
-// h-index = 3 
-// let c =[1,3,1] -> [3,1,1]
-// number of publications = 3, the total number of citations = 5
-// h-index = 1 
-// get average
