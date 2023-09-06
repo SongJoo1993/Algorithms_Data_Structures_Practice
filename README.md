@@ -38,6 +38,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 | :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
 |  Leet125  | Valid Palindrome                  | [JavaScript](Two-Pointers/Leet125_ValidPalindrome.js)                      | O(n)        | 61 ms (92.73%)   | 44.18 mb (88.02%)    | Given a string s, return true if it is a palindrome, or false otherwise.   |  Easy |
 |  Leet392  | Is Subsequence                    | [JavaScript](Two-Pointers/Leet392._IsSubsequence.js)                       | O(n)        | 51 ms (91.11%)   | 42.60 mb (17.90%)    | Given two strings s and t, return true if s is a subsequence of t, or false otherwise.   |  Easy |
+|  Leet167  | Two Sum II                    | [JavaScript](Two-Pointers/Leet167_TwoSumII.js)                       | O(n)        | 50 ms (90.38%)   | 43 mb (38.79%)    | Given an array and target, return an array of two numbers such that they add up to a specific target number   |  Medium |
 
 
 ### Hashmap
