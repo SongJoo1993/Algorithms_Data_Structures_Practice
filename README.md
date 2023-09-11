@@ -40,6 +40,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet392  | Is Subsequence                    | [JavaScript](Two-Pointers/Leet392._IsSubsequence.js)                       | O(n)        | 51 ms (91.11%)   | 42.60 mb (17.90%)    | Given two strings s and t, return true if s is a subsequence of t, or false otherwise.   |  Easy |
 |  Leet167  | Two Sum II                    | [JavaScript](Two-Pointers/Leet167_TwoSumII.js)                       | O(n)        | 50 ms (90.38%)   | 43 mb (38.79%)    | Given an array and target, return an array of two numbers such that they add up to a specific target number   |  Medium |
 |  Leet11  | Container With Most Water                    | [JavaScript](Two-Pointers/Leet11_ContainerWithMostWater.js)                       | O(n)        | 57 ms (92.90%)   | 49.96 mb (21.45%)    | Given an array and target, return the maximum amount of water a container can store   |  Medium |
+|  Leet15  | 3 Sum                    | [JavaScript](Two-Pointers/Leet15_3Sum.js)                       | O(n)        | 57 ms (92.90%)   | 49.96 mb (21.45%)    | Given an array and target, return the maximum amount of water a container can store   |  Medium |
 
 
 ### Hashmap
