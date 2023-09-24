@@ -26,29 +26,31 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: Using two pointers (left,right), first get the maximum water stroage and increase left if left element is smaller than right element or decrease right value. 
+// Logic: Using 
 // Time Complexity: O(n)
 
-var threeSum = function(nums) {
-    let result = [];
-    nums.sort((a,b) => a - b);
-    let target = nums.length -1;
-    let l  = 0, r = target - 2;
-    while(target != 0) {
-        if(nums[l] + nums[r] > target) {
-            r --;
+var threeSum = function(array) {
+    array.sort((a,b) => a - b);
+    const res = [];
+    for(let i=0; i < array.length - 2; i++) {
+    // making sure our solution set does not contain duplicate res
+    if(array[i] != array[i-1]) { 
+        let left = i + 1;
+        let right = array.length - 1;
+        while (left < right) {
+            const currentSum = array[i] + array[left] + array[right];
+            if (currentSum === 0) {
+                res.push([array[i], array[left], array[right]]);
+                while(array[left] == array[left + 1]) left ++
+                while(array[right] == array[right - 1]) right -- // making sure our solution set does not contain duplicate res
+                left ++;
+                right --;
+            } else if(currentSum < 0) {
+                left ++
+            } else if(currentSum > 0) {
+                right --
+            }
         }
-        else if (nums[l] + nums[r] === nums[target]) {
-            let res = [nums[l], nums[r], nums[target]];
-            result.push(res);
-            target --, l = 0, r = target -1;
-        } else {
-            l ++;
-        }
-        
-        if(l > r) {
-            target --;
-        }
-    }
-    return result;
+    }}
+    return res
 };
