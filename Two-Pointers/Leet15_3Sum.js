@@ -26,8 +26,8 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: Using 
-// Time Complexity: O(n)
+// Logic: With current elemnt, using a right and a pointer to find the to find the sum of each element is 0 and make them an array and push it to the res variable.
+// Time Complexity: O(n^2)
 
 var threeSum = function(array) {
     array.sort((a,b) => a - b);
