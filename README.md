@@ -9,6 +9,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 - [Intervals](#intervals)
 - [Stack](#stack)
 - [Linked List](#linked-list)
+- [Binary Search](#binary-search)
 
 
 ### Array
@@ -79,3 +80,10 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet141  | Linked List Cycle                  | [JavaScript](Linked-List/Leet141_LinkedListCycle.js)                      | O(n)        | 57 ms (94.96%)   | 45.2 mb (45.51%)    | Given head, the head of a linked list, determine if the linked list has a cycle in it.   |  Easy |
 |  Leet21   | Merge Two Sorted Lists                  | [JavaScript](Linked-List/Leet21_MergeTwoSortedLists.js)                      | O(n)        | 60 ms (73.56%)   | 43.84 mb (74.68%)    | Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.   |  Easy |
 |  Leet2    | Add Two Numbers                  | [JavaScript](Linked-List/Leet2_AddTwoNumbers.js)                      | O(n)        | 91 ms (70.72%)   | 46.62 mb (95.45%)    | Add the two numbers and return the sum as a linked list.   |  Easy |
+
+
+### Binary Search
+
+|    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
+| :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
+|  Leet35  | Search Insert Position                  | [JavaScript](Linked-List/Leet35._SearchInsertPosition.js)                      | O(n)        |  ms (%)   |  mb (%)    | Given head, the head of a linked list, determine if the linked list has a cycle in it.   |  Easy |
