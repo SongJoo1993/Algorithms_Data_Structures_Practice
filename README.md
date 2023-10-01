@@ -86,4 +86,4 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 
 |    No    | Title                               | Language                                                             | Time Complexity | Run Time (Beat Rate)                   | Memory (Beat Rate)   | Description  | Level | 
 | :------: | ----------------------------------- | -------------------------------------------------------------------- | --------------- | -------------------------------------- | ------------------- | ------------ | ----- | 
-|  Leet35  | Search Insert Position                  | [JavaScript](Linked-List/Leet35._SearchInsertPosition.js)                      | O(n)        |  ms (%)   |  mb (%)    | Given head, the head of a linked list, determine if the linked list has a cycle in it.   |  Easy |
+|  Leet35  | Search Insert Position                  | [JavaScript](Linked-List/Leet35._SearchInsertPosition.js)                      | O(n)        |  51 ms (58.95%)   |  41.80 mb (82.11%)    | Using binary search alg and two pointers (low and high), return the index of target.   |  Easy |

@@ -21,37 +21,18 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: 
-// Time Complexity: O(n^2)
+// Logic: Using binary search alg and two pointers (low and high), return the index of target.
+// Time Complexity: O(log n)
 
 var searchInsert = function(nums, target) {
-    if(target > nums[nums.length - 1]) {
-        return nums.length;
-    }
-    else if(target < nums[0]) {
-        return 0;
-    }
-    else {
-        let low = 0;
-        let high = nums.length - 1;
-        let mid;
-        if(low === high) {
-            return 0;
+    let low = 0, high = nums.length; 
+    while(low < high) { 
+        let mid = low + Math.floor((high-low)/2); 
+        if (target > nums[mid]) {
+            low = mid + 1 
+        } else {
+            high = mid 
         }
-
-        while(low <= high) {
-            mid = Math.floor((low + high)/2);
-            console.log('mid:',mid)
-            if(nums[mid] === target) {
-                return mid;
-            }
-            else if(nums[mid] < target) {
-                low = mid + 1;
-            }
-            else {
-                high = mid - 1;
-            }
-        }
-        return mid;
     }
+    return low;
 };
