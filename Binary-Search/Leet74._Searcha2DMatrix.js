@@ -2,7 +2,7 @@
 From LeetCode
 74. Search a 2D Matrix
 https://leetcode.com/problems/search-a-2d-matrix/
-Date: 2023-10-05
+Date: 2023-10-16
 
 You are given an m x n integer matrix matrix with the following two properties:
 
@@ -27,38 +27,42 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: 
+// Logic: Performs a binary search within the matrix to determine whether the target value is present, utilizing a separate binarySearch function for searching within rows of the matrix.
 // Time Complexity: 
 
+/**
+ * @param {number[][]} matrix
+ * @param {number} target
+ * @return {boolean}
+ */
 var searchMatrix = function(matrix, target) {
-    let len = matrix.length, len2 = matrix[0].length, i = 0;
-    while(i < len) {
-        if(matrix[i][0] <= target && target <= matrix[i][len2-1]){
-            console.log("first is", matrix[i][0],"last is", matrix[i][len2-1])
-            return searchInsert(matrix[i],target);
-        }
-        i++;
+    const inner = matrix[0].length, outer = matrix.length;
+    if (target < matrix[0][0] || target > matrix[outer-1][inner-1]) return false;
+
+    let low = 0,high = matrix.length-1;
+    let mid;
+
+    while (low <= high) {
+        mid = Math.floor((low+high)/2)
+
+        if (target <= matrix[mid][inner-1] && target >= matrix[mid][0]) break;
+        if (target < matrix[mid][0]) high = mid - 1;
+        else if (target > matrix[mid][inner-1]) low = mid + 1;
     }
-    return false;
+
+    return binarySearch(target,matrix[mid])
 };
 
+function binarySearch(target,nums) {
+    let low = 0,high = nums.length-1;
 
-var searchInsert = function(nums, target) {
-    let low = 0, high = nums.length - 1;
-    if(low === high) {
-        return nums[low] === nums[high];
+    while (low <= high) {
+        let mid = Math.floor((low+high)/2);
+        if(target == nums[mid]) return true;
+
+        if(target < nums[mid]) high = mid - 1;
+        else low = mid + 1;
     }
-    while(low < high) { 
-        let mid = Math.ceil((high-low)/2); 
-        if(target === nums[mid]) {
-            return true
-        }
-        else if (target > nums[mid]) {
-            low = mid + 1;
-        } 
-        else {
-            high = mid -1;
-        }
-    }
-    return false;
-};
+
+    return false
+}
