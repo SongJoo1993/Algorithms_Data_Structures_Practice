@@ -30,11 +30,6 @@ Constraints:
 // Logic: Performs a binary search within the matrix to determine whether the target value is present, utilizing a separate binarySearch function for searching within rows of the matrix.
 // Time Complexity: 
 
-/**
- * @param {number[][]} matrix
- * @param {number} target
- * @return {boolean}
- */
 var searchMatrix = function(matrix, target) {
     const inner = matrix[0].length, outer = matrix.length;
     if (target < matrix[0][0] || target > matrix[outer-1][inner-1]) return false;
