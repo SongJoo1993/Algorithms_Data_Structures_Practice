@@ -1,8 +1,9 @@
+
 /*********************************************************************** 
 From LeetCode
 380. Insert Delete GetRandom O(1)
 https://leetcode.com/problems/insert-delete-getrandom-o1/
-Date: 2023-10-17
+Date: 2023-10-22
 
 Implement the RandomizedSet class:
 
@@ -28,21 +29,39 @@ Constraints:
 */
 
 // Attempt Number: 1
-// Logic: 
+// Logic: Since time complexity O(1), we use Set objects as its "set.has()" has the time complexity of O(1) while Array.includes() has time complexity of O(n). 
 // Time Complexity: 
 
-var RandomizedSet = function() {
-    this.vals = [];
-};
+class RandomizedSet {
+    private set : Set<number>;
+    private array: number[];
 
-RandomizedSet.prototype.insert = function(val) {
-    
-};
+    constructor() {
+        this.set = new Set<number>();
+        this.array = [];
+    }
 
-RandomizedSet.prototype.remove = function(val) {
-    
-};
+    insert(val: number): boolean {
+        if(this.set.has(val)) {
+            return false;
+        }
+        this.set.add(val);
+        this.array.push(val);
+        return true;
+    }
 
-RandomizedSet.prototype.getRandom = function() {
-    
-};
+    remove(val: number): boolean {
+        if(!this.set.has(val)) {
+            return false;
+        }
+        this.set.delete(val);
+        const i = this.array.indexOf(val);
+        this.array[i] = this.array[this.array.length -1];
+        this.array.pop();
+        return true;
+    }
+
+    getRandom(): number {
+        return this.array[Math.floor(Math.random() * this.array.length)]
+    }
+}

@@ -31,7 +31,7 @@ A repository for mastering algorithms, data structures, and problem-solving skil
 |  Leet55  | JumpGame | [JavaScript](Array/Leet55_JumpGame.js)                   | O(n)           |  55 ms (94.15%)   | 45.16 mb (99.83%)    | Given an integer array nums, return true if you can reach the last index, or false otherwise.                 |  Medium   |
 |  Leet45  | Jump Game II | [JavaScript](Array/Leet45_JumpGameII.js)                   | O(n)           |  56 ms (78.66%)   | 43.9 mb (59.29%)    | Given an integer array nums, return the minimum number of jumps to reach nums[n - 1].                 |  Medium   |
 |  Leet274  | H-Index | [JavaScript](Array/Leet274_H-Index.js)                   | O(n)           |  54 ms (64.05%)   | 41.2 mb (99.20%)    | Given an integer array nums, return the researcher's h-index.                 |  Medium   |
-|  Leet380  | Insert Delete GetRandom O(1) | [JavaScript](Array/Leet380_InsertDeleteGetRandomO(1).js)                   | O(n)           |   ms (%)   | mb (%)    | Given an integer array nums, return the researcher's h-index.                 |  Medium   |
+|  Leet380  | Insert Delete GetRandom O(1) | [JavaScript](Array/Leet380_InsertDeleteGetRandomO(1).ts)                   | O(n)           |   ms (%)   | mb (%)    | Given an integer array nums, return the researcher's h-index.                 |  Medium   |
 
 
 ### Two Pointers
